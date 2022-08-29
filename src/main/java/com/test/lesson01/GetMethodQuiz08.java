@@ -32,7 +32,7 @@ public class GetMethodQuiz08 extends HttpServlet{
 			out.print("id가 일치하지 않습니다.<br>");
 			
 		}
-		if (pw.equals(userMap.get("password"))==false) {
+		else if (pw.equals(userMap.get("password"))==false) {
 			out.print("비밀번호가 일치하지 않습니다.");
 		}else {
 			out.print(userMap.get("name") + "님 환영합니다!");
