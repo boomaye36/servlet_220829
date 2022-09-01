@@ -15,11 +15,11 @@
 <body>
 	<div class="container">
 	<h1>메뉴 검색</h1>
-	<form method="post" action="submit">
+	<form method="post" action="/lesson02/quiz07_1.jsp">
 	<div class="d-flex">
-	<input type="text" class="form-control col-6" name="menu">
+	<input type="text" class="form-control col-6" name="keyword">
 	<label >4점 이하 제외
-	<input type="checkbox"  name="low4" id="check" value="4점 이하 제외"><br>
+	<input type="checkbox"  name="low4" id="check" value="true"><br>
 	</label>
 	</div>
 	<input type="submit" class="btn btn-success" value="검색">
