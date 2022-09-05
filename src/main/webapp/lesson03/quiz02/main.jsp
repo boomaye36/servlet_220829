@@ -128,9 +128,7 @@ header {height:50px;}
 						</tr>
 					</thead>
 			<%
-				String name = request.getParameter("name");
-				int id = request.getParameter("id");
-				String keyword = request.getParameter("word");
+			
 				for (Map<String, Object>item : musicList){
 					
 				%>		
@@ -138,23 +136,14 @@ header {height:50px;}
 					<tbody>
 						<tr class="row">
 							<td class="col-2"><%=item.get("id")%></td>
-							<td class="col-4"><a href="/lesson03/quiz02/main.jsp?name=<%=item.get("id")%>"><%=item.get("title") %></a></td>
+							<td class="col-4"><a href="main_1.jsp?id=<%=item.get("id")%>"><%=item.get("title") %></a></td>
 							<td class="col-6"><%=item.get("album")%></td>
 						</tr>
 					</tbody>
-		<%
-					if (name != null && item.get("id") == id && (keyword.equals(item.get("title")) == false)){
-						continue;
+		
 						
-					}%>
-						<div>
-							<jsp:include page="header.jsp" />
-							<section>
-								<div class="d-flex align-items-center">
-									<b class="mt-3">멜롱차트 최신음악 장르음악 멜롱DJ 뮤직어워드</b>
-								</div>
 
-								<% 
+						<% 
 				}
 		%>
 							
